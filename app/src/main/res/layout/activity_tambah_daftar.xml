@@ -7,4 +7,40 @@
     android:layout_height="match_parent"
     tools:context=".TambahDaftar">
 
+    <EditText
+        android:id="@+id/etItem"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Nama Item"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <EditText
+        android:id="@+id/etJumlah"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Jumlah"
+        app:layout_constraintTop_toBottomOf="@id/etItem"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp" />
+
+    <Button
+        android:id="@+id/btnTambah"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tambah"
+        app:layout_constraintTop_toBottomOf="@id/etJumlah"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="16dp" />
+
+    <Button
+        android:id="@+id/btnUpdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Update"
+        app:layout_constraintTop_toBottomOf="@id/etJumlah"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
